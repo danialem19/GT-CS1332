@@ -1,0 +1,11 @@
+<html><body>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  1  </span><span style="font-family: monospace"></span><span style="color: #cc0066;">public</span> <span style="color: #cc0066;">interface</span> Measurable</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  2  </span><span style="font-family: monospace">{</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  3  </span></span><span style="font-family: monospace">   </span><span style="color: #cc0066;">double</span> getMeasure(); //<span style="color: #0073ff; font-family: serif; "> An abstract method</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  4  </span></span><span style="font-family: monospace">   </span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  5  </span></span><span style="font-family: monospace">   </span><span style="color: #cc0066;">default</span> <span style="color: #cc0066;">boolean</span> smallerThan(Measurable other)</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  6  </span></span><span style="font-family: monospace">   {</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  7  </span></span><span style="font-family: monospace">      </span><span style="color: #cc0066;">return</span> getMeasure() &lt; other.getMeasure();</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  8  </span></span><span style="font-family: monospace">   }</span></pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  9  </span><span style="font-family: monospace">}</span></pre>
+</body></html>

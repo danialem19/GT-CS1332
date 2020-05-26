@@ -1,0 +1,26 @@
+<html><body>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  1  </span><span style="font-family: monospace"></span><span style="color: #cc0066;">public</span> <span style="color: #cc0066;">class</span> Person <span style="color: #cc0066;">implements</span> Comparable</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  2  </span><span style="font-family: monospace">{</span></pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  3  </span><span style="font-family: monospace">   </span><span style="color: #cc0066;">private</span> String first;</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  4  </span><span style="font-family: monospace">   </span><span style="color: #cc0066;">private</span> String last;</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  5  </span><span style="font-family: monospace">   </span><span style="color: #cc0066;">private</span> <span style="color: #cc0066;">int</span> id;</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  6  </span><span style="font-family: monospace"></span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  7  </span></span><span style="font-family: monospace">   </span><span style="color: #cc0066;">public</span> Person(String first, String last, <span style="color: #cc0066;">int</span> id)</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  8  </span></span><span style="font-family: monospace">   {</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  9  </span></span><span style="font-family: monospace">      </span><span style="color: #cc0066;">this</span>.first = first;</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 10  </span></span><span style="font-family: monospace">      </span><span style="color: #cc0066;">this</span>.last = last;</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 11  </span></span><span style="font-family: monospace">      </span><span style="color: #cc0066;">this</span>.id = id;</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 12  </span></span><span style="font-family: monospace">   }</span></pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 13  </span><span style="font-family: monospace"></span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 14  </span></span><span style="font-family: monospace">   </span><span style="color: #cc0066;">public</span> String toString()</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 15  </span></span><span style="font-family: monospace">   {</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 16  </span></span><span style="font-family: monospace">      </span><span style="color: #cc0066;">return</span> <span style="color: #32e598;">&quot;Person[first=&quot; + first + &quot;,last=&quot; + last + &quot;,id=&quot; + id + &quot;]&quot;</span>;</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 17  </span></span><span style="font-family: monospace">   }</span></pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 18  </span><span style="font-family: monospace"></span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 19  </span></span><span style="font-family: monospace">   </span><span style="color: #cc0066;">public</span> <span style="color: #cc0066;">int</span> compareTo(Object otherObject)</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 20  </span></span><span style="font-family: monospace">   {</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 21  </span></span><span style="font-family: monospace">      </span>Person other = (Person) otherObject;</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 22  </span></span><span style="font-family: monospace">      </span><span style="color: #cc0066;">return</span> id - other.id;</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 23  </span></span><span style="font-family: monospace">   }  </span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 24  </span></span><span style="font-family: monospace">}</span></pre>
+</body></html>
